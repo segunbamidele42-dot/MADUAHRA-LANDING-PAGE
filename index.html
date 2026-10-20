@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ EDIT: Page title -->
+  <title>Maduhara – Support Healthy Blood Sugar Naturally</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;500;600;700&family=Mukta:wght@800&family=Archivo:wght@400&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       ✏️ MEDIA BUYER QUICK-EDIT ZONE
+       All key copy, colours and URLs are here. Edit ONLY this block.
+  ============================================================ -->
+  <style>
+    :root {
+      /* COLOURS */
+      --red:         #AC2815;
+      --red-dark:    #8b1810;
+      --navy:        #123655;
+      --blue:        #1D18C7;
+      --maroon:      #800000;
+      --testi-bg:    #512321;
+      --faq-bg:      #123655;
+      --why-bg:      #EEEEEE;
+      --pricing-bg:  #CAE8EC;
+      --footer-bg:   #5E5D5D;
+      --gold:        #ffcc00;
+
+      /* FONTS */
+      --font-h: 'Poppins', sans-serif;
+      --font-b: 'Montserrat', sans-serif;
+      --font-f: 'Archivo', sans-serif;
+    }
+  </style>
+  <!-- ============================================================
+       END QUICK-EDIT ZONE
+  ============================================================ -->
+
+  <style>
+    /* ── RESET ── */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+
+    body {
+      font-family: var(--font-b);
+      color:#111; background:#fff;
+      overflow-x:hidden;
+      padding-top:48px;
+    }
+
+    /* ── TYPE ── */
+    h1,h2,h3,h4 { font-family:var(--font-h); line-height:1.2; }
+    h1 { font-size:clamp(22px,4.5vw,50px); font-weight:800; text-align:center; }
+    h2 { font-size:clamp(20px,3vw,36px);   font-weight:700; text-align:center; color:#502321; }
+    h3 { font-size:clamp(18px,2.4vw,28px); font-weight:700; text-align:center; }
+    h4 { font-size:clamp(16px,1.9vw,20px); font-weight:700; color:var(--blue); margin:26px 0 9px; }
+    p  { font-size:clamp(14px,1.6vw,16px); line-height:1.75; margin-bottom:14px; }
+    ul,ol { margin-left:22px; margin-bottom:14px; }
+    li { margin-bottom:9px; font-size:clamp(14px,1.5vw,16px); }
+    a  { color:inherit; text-decoration:none; }
+    blockquote {
+      background:#f9f9f9; border-left:4px solid var(--blue);
+      padding:14px 18px; margin:18px 0;
+      font-style:italic; border-radius:0 6px 6px 0;
+    }
+
+    .highlight { color:var(--blue); font-weight:700; }
+    .warning   { color:#cc0000;     font-weight:700; }
+
+    /* ── LAYOUT ── */
+    .container { max-width:900px; margin:0 auto; padding:0 20px; }
+    .section   { padding:52px 0; }
+
+    img {
+      max-width:100%; height:auto; display:block;
+      margin:20px auto; border-radius:8px; border:2px solid #ddd;
+    }
+
+    /* ── TOP BANNER ── */
+    .top-banner {
+      position:fixed; top:0; left:0; width:100%;
+      background:var(--red); color:#fff;
+      text-align:center; padding:11px 18px;
+      font-size:clamp(12px,1.5vw,16px); font-weight:700;
+      z-index:9000; transition:transform .3s ease;
+    }
+    .top-banner.hide { transform:translateY(-100%); }
+
+    /* ── FLOATING BTN ── */
+    .float-btn {
+      position:fixed; top:60px; right:18px;
+      background:var(--red); color:#fff;
+      padding:8px 16px; border-radius:7px;
+      font-size:13px; font-weight:700; font-family:var(--font-b);
+      z-index:8999; box-shadow:0 4px 14px rgba(0,0,0,.3);
+      cursor:pointer; border:none; transition:all .3s;
+    }
+    .float-btn.scrolled { top:12px; padding:12px 22px; font-size:15px; }
+    .float-btn:hover    { background:var(--red-dark); }
+
+    /* ── MAIN CTA BUTTON ── */
+    .btn {
+      display:block; max-width:430px; margin:28px auto;
+      padding:18px 30px;
+      background:var(--red); color:#fff;
+      text-align:center; font-family:var(--font-b);
+      font-size:clamp(16px,2vw,22px); font-weight:700;
+      border-radius:9px; border:none;
+      border-bottom:3px solid #000;
+      box-shadow:0 5px 18px rgba(172,40,21,.45);
+      cursor:pointer; transition:transform .2s, box-shadow .2s;
+    }
+    .btn:hover  { transform:translateY(-3px); box-shadow:0 8px 24px rgba(172,40,21,.55); }
+    .btn:active { transform:translateY(0); }
+
+    /* ── HERO ── */
+    .hero { background:linear-gradient(135deg,#fff 0%,#f8f8f8 100%); padding-top:26px; }
+
+    /* ── TESTIMONIALS ── */
+    .testi-section     { background:var(--testi-bg); }
+    .testi-section h2  { color:#f0f0f1; }
+    .testi-section p   { color:#f0f0f1; }
+
+    /* ── WHY SECTION ── */
+    .why-section { background:var(--why-bg); }
+
+    /* ── FAQ ── */
+    .faq-wrap   { background:var(--faq-bg); }
+    .faq-grid   {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:22px; margin-top:32px;
+    }
+    .faq-card {
+      padding:22px; background:#fff;
+      border-radius:10px;
+      box-shadow:0 3px 10px rgba(0,0,0,.1);
+    }
+    .faq-card h3 { font-size:clamp(15px,1.6vw,17px); text-align:left; margin-bottom:10px; }
+
+    /* ── PRICING ── */
+    .pricing-wrap   { background:var(--pricing-bg); }
+    .pricing-head   {
+      text-align:center; font-size:clamp(20px,2.6vw,30px);
+      font-weight:800; color:#B30000; margin-bottom:40px;
+      font-family:var(--font-h);
+    }
+    .pkg-grid {
+      display:flex; flex-wrap:wrap;
+      justify-content:center; gap:22px;
+    }
+    .pkg-col {
+      background:#fff; border:3px solid #001138;
+      border-radius:12px; padding:28px 20px;
+      text-align:center;
+      flex:1; min-width:270px; max-width:310px;
+      box-shadow:3px 10px 18px rgba(0,0,0,.4);
+      position:relative;
+    }
+    .pkg-col.pop { border-color:var(--navy); transform:scale(1.04); }
+    .pkg-col.pop::before {
+      content:"🏆 MOST POPULAR";
+      position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+      background:var(--gold); padding:4px 14px; border-radius:20px;
+      font-size:11px; font-weight:700; color:#000;
+    }
+    .pkg-title  { font-size:clamp(16px,1.8vw,20px); font-weight:700; color:var(--blue); margin-bottom:12px; font-family:var(--font-h); }
+    .pkg-feat   { font-size:clamp(14px,1.5vw,16px); margin:7px 0; text-align:left; }
+    .pkg-strike { font-size:14px; color:#888; text-decoration:line-through; margin:8px 0; }
+    .pkg-badge  { font-size:14px; font-weight:700; color:#cc0000; margin:7px 0; }
+    .pkg-price  { font-size:clamp(18px,2.2vw,24px); font-weight:700; color:#008000; margin:12px 0; }
+    .pkg-note   { font-size:13px; font-style:italic; text-align:left; margin-top:16px; line-height:1.5; }
+    .pkg-btn {
+      display:block; width:100%; background:var(--red); color:#fff;
+      padding:13px 22px; border-radius:8px; border:none;
+      border-bottom:2px solid #000;
+      font-weight:700; font-size:clamp(16px,1.8vw,19px);
+      margin-top:14px; cursor:pointer;
+      transition:all .25s; font-family:var(--font-b);
+    }
+    .pkg-btn:hover { background:var(--red-dark); transform:translateY(-2px); }
+
+    /* ── RISK FREE ── */
+    .risk-section { background:#fff; text-align:center; }
+    .risk-section h3 { color:#B40000; margin-bottom:22px; }
+    .risk-section ol { text-align:left; max-width:580px; margin:18px auto; padding-left:36px; font-size:clamp(14px,1.5vw,16px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background:var(--footer-bg); color:#fff;
+      font-size:11px; text-align:center;
+      padding:22px 20px; font-family:var(--font-f);
+    }
+
+    /* ══════════════════════════════════════
+       SIDE TRAY
+    ══════════════════════════════════════ */
+    .overlay {
+      position:fixed; inset:0;
+      background:rgba(0,0,0,.38);
+      z-index:10000; opacity:0; pointer-events:none;
+      transition:opacity .35s ease;
+    }
+    .overlay.open { opacity:1; pointer-events:all; }
+
+    .tray {
+      position:fixed; top:0; right:0;
+      width:min(480px,92vw); height:100%;
+      background:#fff;
+      box-shadow:-6px 0 32px rgba(0,0,0,.28);
+      z-index:10001;
+      transform:translateX(102%);
+      transition:transform .38s cubic-bezier(.4,0,.2,1);
+      display:flex; flex-direction:column; overflow:hidden;
+    }
+    .tray.open { transform:translateX(0); }
+
+    .tray-head {
+      padding:15px 20px; background:var(--navy); color:#fff;
+      display:flex; align-items:center; justify-content:space-between;
+      flex-shrink:0;
+    }
+    .tray-head h3 { font-size:17px; color:#fff; text-align:left; margin:0; }
+    .tray-close {
+      background:transparent; border:none; color:#fff;
+      font-size:26px; cursor:pointer; line-height:1;
+      padding:2px 7px; border-radius:4px;
+    }
+    .tray-close:hover { background:rgba(255,255,255,.2); }
+
+    .tray-pkg {
+      background:#f0f7ff; padding:10px 18px;
+      font-size:14px; font-weight:600; color:#222;
+      border-bottom:1px solid #dce8f5; flex-shrink:0;
+    }
+    .tray-pkg span { color:var(--red); }
+
+    .tray-body { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+    .tray-body iframe {
+      width:100%; height:2700px; border:none; display:block;
+    }
+
+    .tray-trust {
+      flex-shrink:0; text-align:center;
+      padding:10px 14px; font-size:12px; color:#555;
+      background:#fafafa; border-top:1px solid #eee;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width:768px) {
+      .section  { padding:34px 0; }
+      .pkg-col.pop { transform:scale(1); }
+      .pkg-grid { flex-direction:column; align-items:stretch; }
+      .pkg-col  { max-width:100%; min-width:100%; }
+      .tray     { width:100%; }
+    }
+    @media (max-width:480px) {
+      .float-btn { right:10px; font-size:12px; padding:7px 13px; }
+    }
+  </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1701595494403586');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1701595494403586&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- TOP BANNER -->
+<div class="top-banner" id="topBanner">
+  <!-- ✏️ EDIT: Banner text -->
+  ✅ Pay On Delivery — No Upfront Payment Required. We Ship Nationwide!
+</div>
+
+<!-- FLOATING ORDER BTN -->
+<button class="float-btn" id="floatingBtn" onclick="openTray('Metabolic Reset — 3 Months (₦120,000)')">
+  Order Now
+</button>
+
+<!-- ══════════ SIDE TRAY ══════════ -->
+<div class="overlay" id="overlay" onclick="closeTray()"></div>
+
+<div class="tray" id="tray">
+  <div class="tray-head">
+    <h3>Complete Your Order</h3>
+    <button class="tray-close" onclick="closeTray()" aria-label="Close">✕</button>
+  </div>
+  <div class="tray-pkg">
+    Selected Package: <span id="trayLabel">Metabolic Reset — 3 Months (₦120,000)</span>
+  </div>
+  <div class="tray-body">
+      
+      <div style="background:#fff3f3;border:3px solid #d9534f;padding:20px;border-radius:8px;margin-bottom:20px;font-family:Arial,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+  <h2 style="margin:0 0 15px;color:#c9302c;font-size:28px;font-weight:900;text-align:center;">
+    ⚠️ IMPORTANT NOTICE – PLEASE READ BEFORE ORDERING
+  </h2>
+
+  <p style="font-size:19px;line-height:1.8;color:#000;font-weight:700;">
+    This order form is strictly for people who are serious about taking action and want to say goodbye to High Blood Pressure and unhealthy cholesterol levels.
+  </p>
+
+  <p style="font-size:18px;line-height:1.8;color:#222;">
+    Once you submit this form, our team will immediately begin processing your order, reserve stock for you, and contact you to confirm your order before shipment.
+  </p>
+
+  <p style="font-size:18px;line-height:1.8;color:#222;font-weight:700;">
+    Please do NOT fill this form if:
+  </p>
+
+  <ul style="font-size:18px;line-height:2;color:#222;padding-left:25px;">
+    <li>❌ You are only curious about the product</li>
+    <li>❌ You are not serious about ordering</li>
+    <li>❌ You will not answer our confirmation call</li>
+    <li>❌ You are not available to receive your package</li>
+    <li>❌ You do not currently have the money to pay for your order within 1–3 working days</li>
+    <li>❌ You are not prepared to pay on delivery</li>
+  </ul>
+
+  <div style="background:#c9302c;color:#fff;padding:15px;border-radius:6px;margin:15px 0;text-align:center;">
+    <p style="margin:0;font-size:22px;font-weight:900;">
+      📦 DELIVERY TAKES 1–3 WORKING DAYS
+    </p>
+  </div>
+
+  <p style="font-size:19px;line-height:1.8;color:#000;font-weight:900;text-align:center;">
+    By filling this form, you confirm that:
+  </p>
+
+  <ul style="font-size:18px;line-height:2;color:#222;padding-left:25px;">
+    <li>✅ You genuinely want this product</li>
+    <li>✅ You are ready to receive your package within 1–3 working days</li>
+    <li>✅ You will answer our confirmation call</li>
+    <li>✅ You have the money available to pay upon delivery</li>
+  </ul>
+
+  <p style="font-size:20px;line-height:1.8;color:#c9302c;font-weight:900;text-align:center;margin-top:15px;">
+    ONLY COMPLETE THIS FORM IF YOU ARE READY TO RECEIVE YOUR ORDER.
+  </p>
+
+</div>
+
+      
+<!-- Paste this where you want the full order form to appear on your landing page -->
+<iframe
+  src="https://lrn-8.vercel.app/"
+  style="
+    width:100%;
+    max-width:440px;
+    height:1500px;
+    border:none;
+    display:block;
+    margin:0 auto;
+  "
+  title="Order Form"
+  loading="lazy"
+></iframe>
+   
+    
+  </div>
+</div>
+<!-- ═══════════════════════════════ -->
+
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero section">
+  <div class="container">
+    <h1>
+      <span style="color:#800000;">Finally, In Nigeria:</span>
+      The 6-Herb '<span class="highlight">Maduhara</span>' Formula For
+      Supporting Healthy Blood Sugar, Stopping Insulin Resistance &amp;
+      Reversing Type 2 Diabetes
+    </h1>
+
+    <p style="text-align:center;font-style:italic;color:#502321;font-weight:600;font-size:clamp(15px,1.8vw,18px);margin:14px 0 20px;">
+      Within 30 Days, That Constant Tiredness, Frequent Urination, Sugar Cravings,
+      Brain Fog And Unstable Blood Sugar Swings Can Become A Thing Of The Past — Naturally!
+    </p>
+
+    <img src="./assets/mad12.jpg" alt="Maduhara Blood Sugar Support Supplement">
+
+    <button class="btn" onclick="openTray('Starter Balance — 1 Month (₦60,000)')">
+      Order Today — Pay On Delivery
+    </button>
+  </div>
+</section>
+
+
+<!-- ══════════ HOW IT WORKS ══════════ -->
+<section class="section">
+  <div class="container">
+    <h2>
+      The 6-Herb Maduhara Blend Is Designed To Support Healthy Blood Sugar
+      And Reduce Insulin Resistance… Without Depending On Daily Drugs.
+    </h2>
+
+    <img src="./assets/mad2.jpg" alt="Maduhara Ingredients">
+
+    <h2 style="margin-top:40px; color:#000;">How Maduhara Actually Works</h2>
+
+    <h4>Why Your Blood Sugar Still Spikes Even When You "Try"</h4>
+    <p>
+      You need to understand one key thing: for most people with Type 2 diabetes,
+      the real issue is not just "too much sugar" — it's that the body is struggling to
+      <em>use</em> sugar properly.
+    </p>
+    <p>
+      <strong>The main enemy is INSULIN RESISTANCE</strong> — when insulin is present
+      but your cells don't respond well, so glucose stays in your blood instead of entering
+      your cells. So even if you avoid sugar or take something that "pushes sugar down,"
+      the spikes can still return because the root problem is still there.
+    </p>
+    <p><strong>That's why you feel stuck.</strong></p>
+
+    <img src="./assets/mad3.jpg" alt="Insulin Resistance Explanation">
+
+    <p>
+      Maduhara is different because it targets the major triggers behind unstable blood sugar
+      with a <strong>"Balance &amp; Support"</strong> approach powered by its 6-herb formula.
+    </p>
+    <p><strong>Here is exactly what happens when you take it consistently:</strong></p>
+
+    <h4>STAGE 1: The "Insulin Awakening" Effect (Improves Sugar Response)</h4>
+    <p>
+      Powerful herbs like <strong>Berberis Aristata (Berberine)</strong> and
+      <strong>Syzygium Cumini (Jambolana Seed)</strong> start supporting how your body responds to insulin.
+    </p>
+    <ul>
+      <li><strong>The Cell Unlocker:</strong> Berberine is known to increase insulin sensitivity — allowing glucose to move from the blood into the cells more efficiently.</li>
+      <li><strong>The Sugar Stabilizer:</strong> Jambolana seed extract has been traditionally used to support balanced blood sugar levels and reduce sudden spikes after meals.</li>
+    </ul>
+
+    <h4>STAGE 2: The "Metabolic Reset" (Supports Liver &amp; Glucose Control)</h4>
+    <p>
+      One major cause of high blood sugar is excess glucose production from the liver.
+      Even when you haven't eaten, the liver can release stored sugar into the bloodstream.
+    </p>
+    <ul>
+      <li><strong>The Glucose Regulator:</strong> Berberine and <strong>Picrorhiza Kurroa</strong> support healthy liver function and help regulate glucose production.</li>
+      <li><strong>The Circulation Support:</strong> <strong>Opuntia Ficus (Prickly Pear)</strong> helps support healthy blood sugar metabolism and overall cardiovascular balance.</li>
+    </ul>
+
+    <h4>STAGE 3: The "Inflammation Shield" (Protects &amp; Supports Long-Term Balance)</h4>
+    <p>
+      Chronic inflammation plays a hidden role in insulin resistance. When inflammation stays high,
+      the body becomes less responsive to insulin.
+    </p>
+    <ul>
+      <li><strong>The Cellular Protector:</strong> <strong>Jatamansi</strong> and <strong>Noni (Morinda Citrifolia)</strong> contain antioxidant compounds that help reduce oxidative stress in the body.</li>
+      <li><strong>Whole-Body Support:</strong> By supporting inflammation balance, circulation, and metabolic function, the body is better positioned to maintain stable blood sugar levels naturally.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section class="testi-section section">
+  <div class="container">
+    <h2>
+      SEE WHAT PEOPLE ARE SAYING AFTER TRYING
+      <span class="highlight">MADUHARA</span> —
+      STABLE SUGAR LEVELS &amp; MORE ENERGY!
+    </h2>
+    <p style="text-align:center;font-weight:600;color:#d4a0a0;margin-bottom:24px;">
+      From constant sugar spikes and tiredness… to better balance and confidence.
+    </p>
+    <img src="./assets/mad33.png" alt="Customer Testimonial 1">
+    <img src="./assets/mad22.png" alt="Customer Testimonial 2">
+    <img src="./assets/mad11.png" alt="Customer Testimonial 3">
+
+    <button class="btn" onclick="openTray('Metabolic Reset — 3 Months (₦120,000)')">
+      I Want To Try Maduhara →
+    </button>
+  </div>
+</section>
+
+
+<!-- ══════════ WHO IT'S FOR ══════════ -->
+<section class="section">
+  <div class="container">
+    <h3>WHO EXACTLY IS <span class="highlight">MADUHARA</span> FOR?</h3>
+    <p style="text-align:center;font-style:italic;font-size:clamp(14px,1.7vw,17px);margin-bottom:28px;">
+      (And Can It Support Long-Term Blood Sugar Stability?)
+    </p>
+
+    <img src="./assets/mad2.jpg" alt="Maduhara Ingredients">
+
+    <p style="text-align:center;font-size:18px;">
+      <em><strong class="warning">"I have been managing Type 2 diabetes for years… can this really help me?"</strong></em>
+    </p>
+    <p>We get this question a lot, and the honest answer is <strong>YES — especially if your issue is insulin resistance.</strong></p>
+    <p>Maduhara was formulated specifically to support people dealing with <strong>chronic high blood sugar, insulin resistance, and metabolic imbalance.</strong></p>
+    <p><strong>If you fall into any of these 4 categories, Maduhara may be perfect for you:</strong></p>
+
+    <h3 style="text-align:left;"><span style="color:#0000ff;">1. The "Long-Term Type 2" Patient</span></h3>
+    <p>You have been managing Type 2 diabetes for years. You take your medication, but your fasting sugar still fluctuates. Some days are good, some days are not.</p>
+    <blockquote><p><strong>Why Maduhara Works For You:</strong> Its berberine-rich formula supports insulin sensitivity, helping your body respond better to insulin instead of fighting against it.</p></blockquote>
+
+    <h3 style="text-align:left;"><span style="color:#0000ff;">2. The "Sugar Spike" Sufferer</span></h3>
+    <p>Your blood sugar jumps after meals. You feel sleepy, weak, or unusually tired after eating rice, bread, or swallow.</p>
+    <blockquote><p><strong>Why Maduhara Works For You:</strong> Ingredients like Syzygium Cumini and Prickly Pear support post-meal glucose balance and reduce sharp spikes.</p></blockquote>
+
+    <h3 style="text-align:left;"><span style="color:#0000ff;">3. The "Belly Fat &amp; Cravings" Struggler</span></h3>
+    <p>You notice increasing belly fat, strong sugar cravings, and difficulty losing weight — even when you try.</p>
+    <blockquote><p><strong>Why Maduhara Works For You:</strong> Insulin resistance often drives stubborn belly fat. Supporting metabolic balance can help reduce cravings and improve energy levels naturally.</p></blockquote>
+
+    <h3 style="text-align:left;"><span style="color:#0000ff;">4. The "Energy Crash" Adult</span></h3>
+    <p>You feel constantly tired, mentally foggy, and wake up several times at night to urinate.</p>
+    <blockquote><p><strong>Why Maduhara Works For You:</strong> When blood sugar stabilizes, many people report better energy, clearer thinking, and improved overall balance.</p></blockquote>
+  </div>
+</section>
+
+
+<!-- ══════════ WHY DIFFERENT ══════════ -->
+<section class="why-section section">
+  <div class="container">
+    <h3 style="color:#0000ff;">"But… Will It Work For ME?"</h3>
+
+    <img src="./assets/mad1.jpeg" alt="Blood Sugar Support">
+
+    <p>We understand your skepticism. You may have tried different supplements that promised to "reverse diabetes overnight" but delivered nothing.</p>
+    <p><strong>Here is why Maduhara is different:</strong></p>
+    <ol style="font-size:clamp(14px,1.6vw,17px);">
+      <li><strong>NAFDAC Registered:</strong> This is not a random backyard mixture. Maduhara is produced under regulated standards and certified for safety.</li>
+      <li><strong>It Targets Insulin Resistance — Not Just Sugar Numbers:</strong> Many products only try to "force sugar down." Maduhara focuses on supporting insulin sensitivity and metabolic balance, which is the root issue in Type 2 diabetes.</li>
+      <li><strong>Payment on Delivery:</strong> We are confident in the quality. You receive the product first, confirm it, then pay.</li>
+    </ol>
+
+    <p style="text-align:center;font-size:clamp(16px,2vw,20px);margin-top:28px;">
+      <span style="color:#800000;"><strong>Stop living in fear of sugar spikes. It's time to support your body the right way.</strong></span>
+    </p>
+
+    <button class="btn" onclick="openTray('Metabolic Reset — 3 Months (₦120,000)')">
+      Order Now — Pay On Delivery
+    </button>
+  </div>
+</section>
+
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="faq-wrap section">
+  <div class="container">
+    <h2 style="color:#f0f0f0;margin-bottom:36px;">
+      Still Deciding? Read The Top Questions Customers Asked Before Ordering
+      <span class="highlight">MADUHARA</span>
+    </h2>
+
+    <div class="faq-grid">
+      <div class="faq-card">
+        <h3>"I have tried many 'blood sugar supplements' online. Is this real?"</h3>
+        <p>That is why Maduhara is <strong>NAFDAC Registered</strong> — produced under regulated standards, not a roadside mixture. You are buying a certified herbal supplement, not random powdered herbs.</p>
+      </div>
+      <div class="faq-card">
+        <h3>"Will this crash my blood sugar suddenly?"</h3>
+        <p><strong>No.</strong> Maduhara is designed to work gradually and not cause sudden dangerous low blood sugar. However, if you are on medication, monitor your levels regularly.</p>
+      </div>
+      <div class="faq-card">
+        <h3>"I am already taking Metformin. Should I stop?"</h3>
+        <p>You should not stop prescribed medication without medical advice. Many customers use Maduhara alongside their routine while monitoring their sugar levels.</p>
+      </div>
+      <div class="faq-card">
+        <h3>"How fast will I see results?"</h3>
+        <p>Some people report improved energy and fewer sugar spikes within the first 1–2 weeks. For complete reversal we recommend consistent use for at least <strong>9–12 weeks.</strong></p>
+      </div>
+      <div class="faq-card">
+        <h3>"Can I still eat normal Nigerian food while using it?"</h3>
+        <p>Maduhara supports blood sugar balance, but healthy eating is still important. You don't need to starve — just eat moderately. This will improve your results significantly.</p>
+      </div>
+      <div class="faq-card">
+        <h3>"I don't have money now. Can I pay on delivery?"</h3>
+        <p><strong>Yes!</strong> We offer <strong>Payment on Delivery</strong> nationwide. You receive the package first, verify it, then pay. No upfront payment required.</p>
+      </div>
+      <div class="faq-card">
+        <h3>"HOW DO I TAKE IT?"</h3>
+        <ul>
+          <li>Take the recommended dose as stated on the bottle label.</li>
+          <li>Best taken before meals (follow label instructions).</li>
+          <li>Stay consistent — daily use gives better results.</li>
+        </ul>
+        <p style="margin-top:12px;"><span class="warning">PRO TIP:</span> Combine with moderate exercise and reduced refined carbs for stronger results.</p>
+      </div>
+      <div class="faq-card">
+        <h3>"Does it have side effects?"</h3>
+        <p>Maduhara is made from natural herbal extracts and is generally well tolerated. Some people may notice mild digestive adjustment in the first few days.</p>
+        <p style="color:#aa7700;font-style:italic;font-size:13px;margin-top:8px;">Pregnant or breastfeeding women, and people with medical conditions, should consult their doctor before use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ PRICING ══════════ -->
+<section id="order" class="pricing-wrap section">
+  <div class="container">
+    <!-- ✏️ EDIT: Pricing headline -->
+    <div class="pricing-head">SELECT YOUR MADUHARA PACKAGE</div>
+
+    <div class="pkg-grid">
+
+      <!-- PACKAGE 1 — STARTER -->
+      <div class="pkg-col">
+        <!-- ✏️ EDIT: Package 1 -->
+        <div class="pkg-title">The "Starter Balance" Pack<br><small>(1 Month Supply)</small></div>
+        <img src="./assets/mad01.jpg" alt="1 Month Supply Maduhara">
+        <div class="pkg-feat">✅ 1 Bottle of Maduhara</div>
+        <div class="pkg-feat">✅ FREE Nationwide Delivery</div>
+        <div class="pkg-feat">✅ Payment on Delivery</div>
+        <div class="pkg-strike">Normal Price: ₦75,000</div>
+        <div class="pkg-price">TODAY'S PRICE: ₦60,000</div>
+        <button class="pkg-btn" onclick="openTray('Starter Balance — 1 Month (₦60,000)')">
+          Select This Package
+        </button>
+        <div class="pkg-note"><strong>Best For:</strong> New users. Recommended if you want to test how your body responds and begin supporting insulin sensitivity gradually.</div>
+      </div>
+
+      <!-- PACKAGE 2 — POPULAR -->
+      <div class="pkg-col pop">
+        <!-- ✏️ EDIT: Package 2 -->
+        <div class="pkg-title">The "Metabolic Reset" Pack<br><small>(3 Months Supply)</small></div>
+        <img src="./assets/mad03.jpg" alt="3 Month Supply Maduhara">
+        <div class="pkg-feat">✅ 3 Bottles of Maduhara</div>
+        <div class="pkg-badge">🔥 MOST POPULAR — Save More!</div>
+        <div class="pkg-feat">✅ FREE Nationwide Delivery</div>
+        <div class="pkg-feat">✅ Payment on Delivery</div>
+        <div class="pkg-strike">Normal Price: ₦150,000</div>
+        <div class="pkg-price">TODAY'S PRICE: ₦120,000</div>
+        <button class="pkg-btn" onclick="openTray('Metabolic Reset — 3 Months (₦120,000)')">
+          Select This Package
+        </button>
+        <div class="pkg-note"><strong>Best For:</strong> Consistent blood sugar fluctuations. Recommended for people who want to reverse Type 2 diabetes and get steady metabolic support within 9–12 weeks.</div>
+      </div>
+
+      <!-- PACKAGE 3 — VALUE -->
+      <div class="pkg-col">
+        <!-- ✏️ EDIT: Package 3 -->
+        <div class="pkg-title">The "Advanced Support" Pack<br><small>(6 Months Supply)</small></div>
+        <img src="./assets/mad06.jpg" alt="6 Month Supply Maduhara">
+        <div class="pkg-feat">✅ 6 Bottles of Maduhara</div>
+        <div class="pkg-badge">💎 BEST VALUE — Biggest Savings</div>
+        <div class="pkg-feat">✅ FREE Nationwide Delivery</div>
+        <div class="pkg-feat">✅ Payment on Delivery</div>
+        <div class="pkg-strike">Normal Price: ₦335,000</div>
+        <div class="pkg-price">TODAY'S PRICE: ₦240,000</div>
+        <button class="pkg-btn" onclick="openTray('Advanced Support — 6 Months (₦240,000)')">
+          Select This Package
+        </button>
+        <div class="pkg-note"><strong>Best For:</strong> Long-term complete reversal. Ideal for individuals who want to completely reverse insulin resistance, sugar imbalance, and poor metabolic health.</div>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:38px;font-size:clamp(14px,1.7vw,17px);">
+      ⚠️ <strong>Important:</strong> Maduhara is a natural supplement designed to provide healthy and stable blood sugar levels.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════ RISK FREE ══════════ -->
+<section class="risk-section section">
+  <div class="container">
+    <h3 style="font-size:clamp(20px,3vw,28px);">🔒 100% RISK-FREE ORDERING</h3>
+
+    <img src="https://jewell.getbrahmishakti.xyz/supp/wp-content/uploads/2025/12/risk-free-removebg-preview.png"
+         alt="Risk Free Guarantee" style="max-width:280px;border:none;">
+
+    <p style="font-size:clamp(15px,1.7vw,17px);margin-top:22px;">
+      We know there are many scams online. That is why we do <strong>NOT</strong> ask for your money now.
+      With Maduhara, you can order with confidence.
+    </p>
+
+    <ol>
+      <li style="margin-bottom:14px;"><strong>Fill the form</strong> — it takes less than 2 minutes.</li>
+      <li style="margin-bottom:14px;"><strong>We ship</strong> your Maduhara package to your location (Lagos, Abuja, PH, etc.).</li>
+      <li style="margin-bottom:14px;"><strong>You receive</strong> the package, open it, and confirm it is the original Maduhara.</li>
+      <li style="margin-bottom:14px;"><strong>YOU PAY THE RIDER</strong> only after you are satisfied.</li>
+    </ol>
+
+    <p style="font-weight:700;font-size:clamp(15px,1.7vw,17px);margin-top:22px;">
+      (Free Delivery Applies to ALL Packages Today!)
+    </p>
+
+    <button class="btn" onclick="openTray('Metabolic Reset — 3 Months (₦120,000)')">
+      Yes — I Want To Order Now!
+    </button>
+  </div>
+</section>
+
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container">
+    <!-- ✏️ EDIT: Disclaimer text -->
+    <p>This product is designed to support your health and well-being based on widely recognised principles. Please note that these statements have not been evaluated by NAFDAC, and the information provided is for general knowledge only. For personalised medical advice or concerns about your health, we encourage you to consult with a qualified healthcare professional. While we strive to provide accurate and helpful information, this content is for educational and promotional purposes only and is not a substitute for professional medical care.</p>
+    <p style="margin-top:10px;">© 2025 Maduhara. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- ══════════ SCRIPTS ══════════ -->
+<script>
+  /* Banner + float button on scroll */
+  var banner = document.getElementById('topBanner');
+  var floatBtn = document.getElementById('floatingBtn');
+  window.addEventListener('scroll', function() {
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    if (y > 120) {
+      banner.classList.add('hide');
+      floatBtn.classList.add('scrolled');
+    } else {
+      banner.classList.remove('hide');
+      floatBtn.classList.remove('scrolled');
+    }
+  });
+
+  /* Side tray open / close */
+  function openTray(pkg) {
+    document.getElementById('trayLabel').textContent = pkg || 'Selected Package';
+    document.getElementById('overlay').classList.add('open');
+    document.getElementById('tray').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeTray() {
+    document.getElementById('overlay').classList.remove('open');
+    document.getElementById('tray').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeTray();
+  });
+
+  /* Redirect on form submit */
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.event === 'submissionComplete') {
+      /* ✏️ EDIT: Change redirect URL */
+      window.location.href = './thank-you/index.html';
+    }
+  });
+</script>
+
+</body>
+</html>
